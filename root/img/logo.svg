@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.61 204.49">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #2a1b18;
+      }
+
+      .cls-1 {
+        stroke: #2c1d1a;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke: #2a1b18;
+      }
+
+      .cls-3, .cls-5 {
+        stroke: #40220f;
+      }
+
+      .cls-4, .cls-5 {
+        fill: none;
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        stroke: #2b1c19;
+      }
+
+      .cls-6 {
+        font-size: 21px;
+        font-family: ImprintMT-Shadow, Imprint MT Shadow;
+      }
+    </style>
+  </defs>
+  <title>logo.svg</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <g id="Layer_5" data-name="Layer 5">
+          <path class="cls-1" d="M72.46,146.38h83v.9s-5.4,0-8.3,1.6-3.2,2.3-3.2,2.3H81.06s-5.2-2.9-8.1-3.3S72.46,146.38,72.46,146.38Z"/>
+          <path class="cls-2" d="M73.16,146.28s-.9-18.6,16.1-26.6,24.5-7.3,24.9-7.4-2.1-5-3.1-5.5.4-2.2.4-2.2h7.3l2.4,1.3s-5.3,6.2-4.3,6.2,19.7,1.9,28.6,9.6,10.1,12.3,11.1,14.6,3.1,11.2,2.7,12-2.1,0-2.1,0-6.5-32.6-38.4-29.2-32.7,27.5-32.7,27.5l-2.4-.2c-1.3-8,5.1-16.2,15.7-24.7-7,5.2-14.8,8.3-17.3,24.6l-3.2.2c-.1-9,4.6-17.1,12.9-24.7-9.8,6.1-14.9,14.3-15,24.8Z"/>
+          <path class="cls-2" d="M100,135.08c5.5-6.7,11.8-11.9,21.2-12.3,6.3-.6,10.9.8,15.6,2.2-3.5-2.3-7.1-4.5-15.9-4.5-10.5.9-17.1,5.9-21.7,12.9Z"/>
+          <path class="cls-1" d="M104.26,134.08s9.6-7.8,18.4-7.4a50.48,50.48,0,0,1,14.8,2.9s-.3-2.5-1.8-2.9-9.2-2.8-14.8-1.5S108.36,128,104.26,134.08Z"/>
+          <path class="cls-3" d="M113.46,133.38s12.2-3.7,16.1-3.1-5.5-2.3-10.2-.9-7.4,1.9-7.1,2.6A5.79,5.79,0,0,0,113.46,133.38Z"/>
+          <path class="cls-4" d="M105.76,85.48s8.5,3.3,9.4,4.7-5.3-5.6-2-6,11.8.4,16.9,6.9,5.4,8,5.8,9.6"/>
+          <path class="cls-5" d="M129.66,82.48c9.4,1.8,13.8,11.1,15.6,24.4,1.2-2.6,2.6-4.9,5.4-5,6.3,4.3,2.2,13.9-1.7,23.4,1.7.2,2.1.7.8,1.5l4.1-4.8"/>
+        </g>
+        <text class="cls-6" transform="translate(38.34 122.13) rotate(-81.3)">F</text>
+        <text class="cls-6" transform="matrix(0.33, -0.95, 0.95, 0.33, 40.29, 108.66)">A</text>
+        <text class="cls-6" transform="matrix(0.52, -0.85, 0.85, 0.52, 44.8, 94.72)">M</text>
+        <text class="cls-6" transform="translate(54.92 78.85) rotate(-48.87)">I</text>
+        <text class="cls-6" transform="translate(60.03 72.61) rotate(-40.63)">L</text>
+        <text class="cls-6" transform="translate(70.61 63.41) rotate(-30.05)">Y</text>
+        <text class="cls-6" transform="translate(83.64 56.21) rotate(-22.89)"> </text>
+        <text class="cls-6" transform="translate(87.89 53.94) rotate(-15.05)">O</text>
+        <text class="cls-6" transform="translate(103.75 49.75) rotate(-3.96)">F</text>
+        <text class="cls-6" transform="matrix(1, 0.05, -0.05, 1, 117.51, 49.04)"> </text>
+        <text class="cls-6" transform="translate(122.36 48.98) rotate(9.95)">E</text>
+        <text class="cls-6" transform="translate(136.2 51.32) rotate(20.45)">A</text>
+        <text class="cls-6" transform="matrix(0.86, 0.52, -0.52, 0.86, 149.98, 56.39)">T</text>
+        <text class="cls-6" transform="matrix(0.75, 0.67, -0.67, 0.75, 162.57, 63.98)">E</text>
+        <text class="cls-6" transform="translate(173.13 73.24) rotate(52.74)">R</text>
+        <text class="cls-6" transform="translate(182.4 85.84) rotate(61.44)">I</text>
+        <text class="cls-6" transform="translate(186.46 92.77) rotate(69.49)">E</text>
+        <text class="cls-6" transform="matrix(0.19, 0.98, -0.98, 0.19, 191.37, 106)">S</text>
+        <text/>        <text/>        <text/>        <text/>      </g>
+    </g>
+  </g>
+</svg>

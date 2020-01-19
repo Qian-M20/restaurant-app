@@ -1,0 +1,1102 @@
+/* RESET CSS ////////////////////////////////////////// */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display:none; 
+    overflow: hidden;
+}
+
+section {
+    display:none;
+}
+
+/* FONTS /////////////////////////////////////////////// */
+
+/* app font */
+@font-face {
+    font-family: "AppFont";
+    src: url(fonts/KaushanScript-Regular.otf);
+}
+
+/* restaurant 1 fonts */
+@font-face {
+    font-family: "Rest1FontTitle";
+    src: url(fonts/AndikaNewBasic-BI.ttf);
+}
+
+/* regular size */
+@font-face {
+    font-family: "Rest1FontBody";
+    src: url(fonts/AndikaNewBasic-R.ttf);
+}
+
+/* if you want to use a bold version, it has to be downloaded bold */
+@font-face {
+    font-family: "Rest1FontBodyBold";
+    src: url(fonts/AndikaNewBasic-B.ttf);
+}
+
+/* restaurant 2 fonts */
+@font-face {
+    font-family: "Rest2FontTitle";
+    src: url(fonts/Vera-Bold-Italic.ttf);
+}
+
+/* regular size */
+@font-face {
+    font-family: "Rest2FontBody";
+    src: url(fonts/Vera.ttf);
+}
+
+/* if you want to use a bold version, it has to be downloaded bold */
+@font-face {
+    font-family: "Rest2FontBodyBold";
+    src: url(fonts/Vera-Bold.ttf);
+}
+
+/* restaurant 3 fonts */
+@font-face {
+    font-family: "Rest3FontTitle";
+    src: url(fonts/Cadman_BoldItalic.otf);
+}
+
+/* regular size */
+@font-face {
+    font-family: "Rest3FontBody";
+    src: url(fonts/Cadman_Roman.otf);
+}
+
+/* if you want to use a bold version, it has to be downloaded bold */
+@font-face {
+    font-family: "Rest3FontBodyBold";
+    src: url(fonts/Cadman_Bold.otf);
+}
+
+/* GENRAL APP STYLES /////////////////////////////////// */
+
+body {
+    font-size: 14px;
+/*    overflow has to be auto, otherwise the chefintro would not show up*/
+    overflow: auto;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    position: absolute;
+    width: 375px;
+    height: 667px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+
+    
+}
+
+header {
+    width: 375px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    padding: 15px;
+}
+
+section {
+    position: absolute;
+    top: 60px;
+    width: 375px;
+    height: 547px;
+    background: #FFF;
+    overflow: auto;
+    padding: 20px;
+}
+
+footer {
+    width: 375px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+}
+/* SPLASH SCREEN ////////////////////////////////////////// */
+
+#splahLogo {
+    width:80%;
+}
+
+.backImg {
+    width:100%;
+    height:100%;
+    position: absolute;
+    background-image: url(../img/splash_bg.png);
+    background-size: cover;
+    /* -webkit-filter: opacity(30%);
+    filter: opacity(30%); */
+}
+
+#splash header {
+/* if AppFont doesn't work, use sans-serif instead */
+    font-family:"AppFont",sans-serif;
+    font-style: italic;
+/*    when you need to create a line diving two sections, use border-bottom: */
+    border-bottom: solid 5px #FFF;
+    background: rgba(255,255,255,.8);
+    font-size: 35px;
+    color: #2a1b18;
+    padding: 5px;
+    height: 60px;
+    text-align: center;
+}
+
+#splash img {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    height: auto;
+}
+
+
+/* LANDING SCREEN ///////////////////////////////////////// */
+
+#landing {
+    /* font-family: "AppFont", sans-serif; */
+    /* background-image: url(../img/splash_bg.png); */
+    background-size: cover;
+    padding-top: 80px;
+}
+
+
+#landing header {
+    box-shadow: 1px 3px 10px 1px rgba(0,0,0,.8);
+    background:#f1862f;
+    color: white;
+    height: 60px;
+    padding: 5px;
+    font-size: 2em;
+    /* line-height: 60px; */
+    text-align: center;
+    font-family: 'Alata', sans-serif;
+
+}
+
+
+.landingLogos {
+    position: relative;
+    width:auto;
+    height:190px;
+    margin: 5px;
+    background:#fff;
+    /* border-left:10px solid #362e2b; */
+    padding:20px;
+
+}
+
+.rest1_landinglogos, .rest2_landinglogos {
+    border-bottom: 2px dotted black;
+}
+
+.landingLogos:hover {
+    box-shadow: 1px 3px 10px 1px rgba(0,0,0,.8);
+    cursor: pointer;
+}
+
+
+
+.textintro {
+    width:60%;
+    float:left;
+    color:#990033;
+    padding:12px 0 12px 0;
+}
+
+.textintro h1 {
+    font-size:25px;
+    
+}
+
+.rest1_landinglogs h1 {
+    font-family: Rest1FontTitle;
+    
+}
+
+.rest1_landinglogs p {
+    font-family: Rest1FontBody;
+    color: #003366;
+}
+
+.rest2_landinglogos h1{
+    font-family:Rest2FontTitle;
+    color:#ec6941;
+    font-size:20.5px;  
+}
+
+.rest2_landinglogos p {
+    font-family: Rest2FontBody;
+    color:#220c35;
+}
+
+.rest2_landinglogos img {
+    height:95%;
+}
+
+.rest3_landinglogos h1 {
+    font-family: Rest3FontTitle;
+    color:#75a128;
+}
+
+.rest3_landinglogos p {
+    font-family: Rest3FontBody;
+    color:#002b4d;
+}
+
+.rest3_landinglogos img {
+    height:90%;
+    
+}
+
+
+.landinglogos {
+    width:40%;
+    padding:10px;
+}
+
+
+/* //////MENU ////////////////////////////////////////////// */
+
+#menu {
+    
+    background: #7dc6dc;
+    padding-top: 80px;
+}
+
+#menu header {
+    font-family: "AppFont", sans-serif;
+    padding: 15px;
+    border-bottom: solid 5px #FFF;
+    background: #c97d2a;
+    color: #FFF;
+    font-size: 25px;
+    line-height: 100%;
+}
+
+.menuBtn {
+    padding: 20px;
+    background: #FFF;
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 100%;
+}
+
+.menuBtn img {
+    width: 40px;
+    height: auto;
+    float: left;
+    margin-right: 7px;
+    margin-top: -10px;
+}
+
+.menuBtn span {
+    display: block;
+    margin-top: 2px;
+    font-size:18px;
+}
+
+.contactform {
+    font-family: AppFont;
+    text-align: center;
+    
+}
+.contactbox {
+    background:#fff;
+    padding:5px;
+    border:1px solid #000;
+    width:75%;
+    margin:10px;
+    height:auto;
+    opacity:0;
+}
+
+#menu input, #menu select, #menu textarea {
+    border-color: #00274d;
+    font-family: sans-serif;
+}
+
+#menu input:focus, #menu select:focus, #menu textarea:focus {
+    outline: none;
+    background: rgba(153, 0, 51, 0.05);
+}
+
+#menu p {
+    margin:2px;
+}
+
+#menu .submit {
+    border-color: #FFF !important;
+    color: #FFF;
+    background: #c97d2a;
+}
+
+#menu .submit span {
+    color:#c97d2a;
+}
+
+#menu .submit:hover {
+    border-color: #c97d2a !important;
+    color: #c97d2a;
+    background: #FFF;
+}
+
+
+/* SHARED RESTAURANT /////////////////////////////////// */
+
+/* header/footer */
+
+header {
+    background: #ffffff;;
+    padding:10px;
+    height:60px;
+
+}
+
+.logobox {
+    width:25%;
+    margin-left: 55px;
+    
+}
+
+footer div {
+    float: left;
+    text-align: center;
+    overflow: auto;
+    font-size: 12px;
+    padding: 10px;
+    color: #FFF;
+    margin-left:40px;
+}
+
+footer img {
+    height: 25px;
+    width: auto;
+}
+.hamburgermenu {
+    float:left;
+    width:50%;
+    margin-top: -10px;
+}
+
+.hamburger {
+    width:60px;
+    height:auto;
+}
+
+
+.featurebg {
+    width:100%;
+}
+
+
+header img {
+    width: 35px;
+    height: auto;   
+}
+
+
+
+/* general section */
+.sectionContainer {
+/*    when you need to create dotted border */
+    text-align: center;
+    overflow: auto;
+    color: #000;
+}
+
+/* home section */
+
+.hours {
+    margin-top: 10px;
+}
+
+.hours>p {
+    color:gray;
+}
+
+.chefintro {
+    text-align: left;
+    overflow: auto;
+    padding-left:5px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+}
+
+.profileBold {
+    font-size:20px;
+    font-weight:600;
+}
+
+.chefnameitallic {
+    font-size:15px;
+    font-style: italic;
+}
+
+/* general specials/reservations */
+.sectionBanner {
+    width: 359px;
+    height: 80px;
+    background-size: 359px auto;
+    margin-left: -12px;
+}
+
+.reservationSectionBanner {
+     width: 359px;
+    height: 80px;
+    background-size: 359px auto;
+    margin-left: -12px;
+}
+
+.leftside {
+    width:40%;
+    margin-right:40px;
+    
+}
+
+ .rightside {
+    width:40%;
+    position:relative;
+    margin-left:190px;
+    margin-top:-185px;
+
+}
+
+
+/* specials section */
+.specials .sectionContainer {
+    border-top: none;
+    text-align: left;
+}
+
+.nightContainer {
+    padding: 10px;
+    padding-bottom: 20px;
+    margin: 10px 0;
+    overflow: auto;
+}
+
+.nightContainer:first-child {
+    margin-top: 0;
+}
+
+.nightContainer:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.nightContainer img {
+    width: 140px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+    margin-top:20px;
+}
+
+.nightContainer div {
+    float: left;
+    width: 130px;
+    margin:10px;
+    padding-left:10px;
+}
+
+.nightContainer h {
+    font-size: 15px;
+}
+
+.nightContainer p {
+    margin-top: 10px;
+    margin: 0 !important;
+}
+
+
+.altImg {
+    float: right !important;
+    margin: 0 !important;
+    margin-left: 10px !important;
+
+}
+
+
+/* reservations section */
+.reservations .sectionContainer {
+    border-top: none;
+    text-align: left;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.reservations h2 {
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    padding: 5px;
+    border: solid 1px;
+    width: 100%;
+    font-size: 10px;
+    border-radius: 5px;
+    color: #666;
+    background: #FFF;
+}
+
+.reserve {
+    border-color: #FFF !important;
+    color: #FFF;
+    font-size: 18px;
+    margin-top: 15px;
+}
+/* RESTAURANT 1 ////////////////////////////////////// */
+
+/* general */
+#rest1 {
+    font-family: "Rest1FontBody", sans-serif;
+}
+
+/* general section */
+#rest1 .sectionContainer {
+    border-bottom-color: #990033;
+}
+
+
+/* header/footer */
+#rest1 header {
+    border-bottom: solid 5px #990033;
+
+}
+
+
+#rest1 footer {
+    background: #990033;
+}
+
+
+
+#rest1 .hours p {
+    font-family: Rest1FontBody;
+    margin-top:10px;
+}
+
+#rest1 .hours span {
+    font-family: "Rest1FontBodyBold";
+
+}
+/* footer subnav */
+
+
+
+/* home */
+
+#rest1 h2 {
+    font-family: "Rest1FontTitle";
+    color:#990033;
+    font-size: 40px;
+}
+
+
+#rest1 .hours h2 {
+    color: #990033;
+    border-bottom-color: #990033;
+    font-family: "Rest1FontBodyBold";
+    font-size: 20px;
+}
+
+.carouselExampleIndicators {
+    position:absolute;
+}
+
+.rest1_banner {
+    width:100%;
+    position:relative;
+    margin-top:-150px;
+}
+
+#rest1 .chefprofile {
+    width:100%;
+    height:auto;
+    margin-top:20px;
+}
+
+#rest1 .profileBold {
+    font-family: "Rest1FontTitle";
+}
+#rest1 .chefpic {
+    width:150px;
+    height:150px;
+    float:left;
+    background-image: url(../img/rest1_chef.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#rest1 .chefname {
+    float:left;
+    width:150px;
+    height:150px;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+/* general specials/reservations */
+
+
+/* specials */
+
+#rest1 .sectionBanner {
+    background: url(../img/rest1_banner.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+#rest1 .sectionContainer h {
+    font-family: Rest1FontBodyBold;
+    color:#003366;
+}
+
+#rest1 .sectionContainer p {
+    font-family: Rest1FontBody;
+}
+
+#rest1 .sectionContainer p.reveal, #rest1 .sectionContainer p.profileBold, #rest1 .sectionContainer p.chefnameitallic {
+    color:#003366;
+}
+
+.sectionContainer>p {
+    font-family: Rest1FontBody;
+    color:gray;
+}
+
+/* reservations */
+
+#rest1 .reservationSectionBanner {
+    background:url(../img/rest1_reservations.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
+/* reservations */
+#rest1 .reservations .sectionContainer {
+    color: #990033;
+}
+
+#rest1 .reservations h2 {
+    border-bottom: solid 1px #990033;
+    font-size:25px;
+    font-family:"Rest1FontTitle";
+    text-align: center;
+}
+
+#rest1 input, #rest1 select, #rest1 textarea {
+    border-color: #00274d;
+    font-family: "Rest1FontBody", sans-serif;
+}
+
+#rest1 input:focus, #rest1 select:focus, #rest1 textarea:focus {
+    outline: none;
+    background: rgba(153, 0, 51, 0.05);
+}
+
+#rest1 .reserve {
+    border-color: #FFF !important;
+    color: #FFF;
+    background: #990033;
+}
+
+#rest1 .reservations span {
+    color:#990033;
+}
+
+#rest1 .reserve:hover {
+    border-color: #990033 !important;
+    color: #990033;
+    background: #FFF;
+}
+
+/* general */
+#rest1 {
+    font-family: "Rest1FontBody", sans-serif;
+}
+
+/* general section */
+#rest1 .sectionContainer {
+    border-bottom-color: #990033;
+}
+
+
+/* header/footer */
+#rest1 header {
+    border-bottom: solid 5px #990033;
+
+}
+
+
+#rest1 footer {
+    background: #990033;
+}
+
+/* footer subnav */
+
+
+/* RESTAURANT 2 /////////////////////////////////////////// */
+/* general */
+#rest2 {
+    font-family: "Rest2FontBody", sans-serif;
+}
+
+/* general section */
+#rest2 .sectionContainer {
+    border-bottom-color: #f8b62b;
+}
+
+
+/* header/footer */
+#rest2 header {
+    border-bottom: solid 5px #f8b62b;
+
+}
+
+
+#rest2 footer {
+    background: #f8b62b;
+}
+
+
+#rest2 .hours p {
+    font-family: Rest2FontBody;
+    margin-top:10px;
+}
+
+#rest2 .hours span {
+    font-family: "Rest2FontBodyBold";
+
+}
+
+#rest2 .chefname {
+    margin-left:10px;
+}
+
+
+#rest2 .chefpic {
+    margin-bottom:20px;
+}
+
+#rest2 .chefmonica {
+    float:left;
+}
+/* home */
+ 
+#rest2 .logobox {
+    width:40px;
+    margin-left:100px;
+}
+
+#rest2 h2 {
+    font-family: "Rest2FontTitle";
+    color:#f8b62b;
+    font-size: 30px;
+}
+
+
+#rest2 .hours h2 {
+    color: #220c35;
+    border-bottom-color: #f8b62b;
+    font-family: "Rest2FontBodyBold";
+    font-size: 20px;
+}
+
+.carouselExampleIndicators {
+    position:absolute;
+}
+
+.rest2_banner {
+    width:100%;
+    position:relative;
+    margin-top:-150px;
+}
+
+#rest2 .chefprofile {
+    width:100%;
+    height:auto;
+    margin-top:20px;
+}
+
+#rest2 .profileBold {
+    font-family: "Rest2FontTitle";
+}
+#rest2 .chefpic {
+    width:150px;
+    height:150px;
+    float:left;
+    background-image: url(../img/rest2_chef.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#rest2 .chefname {
+    float:left;
+    width:150px;
+    height:150px;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+/* general specials/reservations */
+
+
+/* specials */
+
+#rest2 .sectionBanner {
+    background: url(../img/rest2_banner.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+#rest2 .sectionContainer h {
+    font-family: Rest2FontBodyBold;
+    color:#220c35;
+}
+
+#rest2 .sectionContainer p {
+    font-family: Rest2FontBody;
+    color:#220c35;
+}
+
+#rest2 .special4 img {
+    margin-top:20px;
+    
+}
+
+
+/* reservations */
+
+#rest2 .reservationSectionBanner {
+    background:url(../img/rest2_reservations.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
+/* reservations */
+#rest2 .reservations .sectionContainer {
+    color: #f8b62b;
+}
+
+#rest2 .reservations h2 {
+    border-bottom: solid 1px #f8b62b;
+    font-size:25px;
+    font-family:"Rest2FontTitle";
+    text-align: center;
+}
+
+#rest2 input, #rest2 select, #rest2 textarea {
+    border-color: #220c35;
+    font-family: "Rest2FontBody", sans-serif;
+}
+
+#rest2 input:focus, #rest2 select:focus, #rest2 textarea:focus {
+    outline: none;
+    background: rgba(248, 182, 43, 0.05);
+}
+
+#rest2 .reserve {
+    border-color: #FFF !important;
+    color: #FFF;
+    background: #f8b62b;
+}
+
+#rest2 .reservations span {
+    color:#f8b62b;
+}
+
+#rest2 .reserve:hover {
+    border-color: #f8b62b !important;
+    color: #f8b62b;
+    background: #FFF;
+}
+
+
+/* RESTAURANT 3 /////////////////////////////////////////// */
+/* general */
+#rest3 {
+    font-family: "Rest3FontBody", sans-serif;
+}
+
+/* general section */
+#rest3 .sectionContainer {
+    border-bottom-color: #75a128;
+}
+
+
+/* header/footer */
+#rest3 header {
+    border-bottom: solid 5px #75a128;
+
+}
+
+
+#rest3 footer {
+    background: #75a128;
+}
+
+
+#rest3 .hours p {
+    font-family: Rest3FontBody;
+    margin-top:10px;
+}
+
+#rest3 .hours span {
+    font-family: "Rest3FontBodyBold";
+
+}
+
+#rest3 .chefname {
+    margin-left:10px;
+}
+
+
+#rest3 .chefpic {
+    margin-bottom:20px;
+}
+
+#rest3 .chefmonica {
+    float:left;
+}
+/* home */
+
+#rest3 .logobox {
+    width:30px;
+    margin-left:100px;
+}
+#rest3 h2 {
+    font-family: "Rest3FontTitle";
+    color:#75a128;
+    font-size: 40px;
+}
+
+
+#rest3 .hours h2 {
+    color: #00274d;
+    border-bottom-color: #75a128;
+    font-family: "Rest3FontBodyBold";
+    font-size: 20px;
+}
+
+.carouselExampleIndicators {
+    position:absolute;
+}
+
+.rest3_banner {
+    width:100%;
+    position:relative;
+    margin-top:-150px;
+}
+
+#rest3 .chefprofile {
+    width:100%;
+    height:auto;
+    margin-top:20px;
+}
+
+#rest3 .profileBold {
+    font-family: "Rest3FontTitle";
+}
+#rest3 .chefpic {
+    width:150px;
+    height:150px;
+    float:left;
+    background-image: url(../img/rest3_chef.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#rest3 .chefname {
+    float:left;
+    width:150px;
+    height:150px;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+/* general specials/reservations */
+
+
+/* specials */
+
+#rest3 .sectionBanner {
+    background: url(../img/rest3_banner.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+#rest3 .sectionContainer h {
+    font-family: Rest3FontBodyBold;
+    color:#00274d;
+}
+
+#rest3 .sectionContainer p {
+    font-family: Rest3FontBody;
+    color:#00274d;
+}
+
+/* reservations */
+
+#rest3 .reservationSectionBanner {
+    background:url(../img/rest3_reservations.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
+/* reservations */
+#rest3 .reservations .sectionContainer {
+    color: #75a128;
+}
+
+#rest3 .reservations h2 {
+    border-bottom: solid 1px #75a128;
+    font-size:25px;
+    font-family:"Rest3FontTitle";
+    text-align: center;
+}
+
+#rest3 input, #rest3 select, #rest3 textarea {
+    border-color: #00274d;
+    font-family: "Rest3FontBody", sans-serif;
+}
+
+#rest3 input:focus, #rest3 select:focus, #rest3 textarea:focus {
+    outline: none;
+    background: rgba(171, 161, 40, 0.05);
+}
+
+#rest3 .reserve {
+    border-color: #FFF !important;
+    color: #FFF;
+    background: #75a128;
+}
+
+#rest3 .reservations span {
+    color:#75a128;
+}
+
+#rest3 .reserve:hover {
+    border-color: #75a128 !important;
+    color: #75a128;
+    background: #FFF;
+}
+
