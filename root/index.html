@@ -94,7 +94,7 @@
         </header>
         
 
-        <div id="logo1" class="landingLogos rest1_landinglogos">
+        <div id="logo1" class="landingCards landingLogos rest1_landinglogos">
             <div class="textintro">
                 <h1>Tavola Cucina</h1>
                 <p>Best Italian restaurant with cultivated ambience</p>
@@ -104,7 +104,7 @@
         
         </div>
         
-        <div id="logo2" class="landingLogos rest2_landinglogos">
+        <div id="logo2" class="landingCards landingLogos rest2_landinglogos">
             <div class="textintro">
                 <h1>Hearth & Stone</h1>
                 <p>Best sandwiches with great quality meat.</p>
@@ -114,7 +114,7 @@
         
         </div>
         
-        <div id="logo3" class="landingLogos rest3_landinglogos">
+        <div id="logo3" class="landingCards landingLogos rest3_landinglogos">
             <div class="textintro">
                 <h1>Crispy's</h1>
                 <p>Great tasting burgers and traditional dinner fare.</p>
@@ -192,7 +192,7 @@
                     </div>
                     
                     <p class="reveal"> 
-                        Chef Skwanski travels regularly to Italy with members of his kitchen and front-of-house teams to meet with Italian artisanal cheese and cured meat producers, olive oil and balsamic vinegar producers, and internationally acclaimed winemakers. These Italian "finds" quickly make their way onto the innovative menus at each of his restaurants, and add to what rates as a truly authentic Italian dining experience.
+                        Frequent traveler to Italy and makes his way onto the innovative menus, bringing customers a truly authentic Italian dining experience.
                     </p>
                 </div>
             </div>
@@ -200,42 +200,64 @@
             
         <!-- specials -->
         <section class="specials">
-            <div class="sectionBanner reveal">            
-            </div>
+            <div class="sectionBanner reveal"></div>
             <div class="sectionContainer">
                 <div class="nightContainer reveal">
-                    <img src="img/rest1_special1.png" alt="Tuesday Special" />
-                    <div>
-                        <h> PICCATA</h>
-                        <p>Grilled chicken topped with a lemon garlic butter sauce, sun-dried tomatoes and capers.</p>
+                    <div class="menuPic">
+                        <img src="img/rest1_special1.png" alt="Tuesday Special" />
+                    </div>
+                    <div class="menuDesc">
+                        <h> PICCATA $10</h>
+                        <ul>
+                            <li><p>Grilled chicken</p></li>
+                            <li><p>Lemon garlic butter sarce</p></li>
+                            <li><p>Sundried tomatoes</p></li>
+                        </ul>                    
                     </div>
                 </div>
                 <div class="nightContainer reveal">
-                    <img class="altImg" src="img/rest1_special2.png" alt="Wednesday Special" />
                     <div>
-                        <h>SHRIMP SCAMPI</h>
-                        <p>Shrimp sautéed in a garlic sauce, tossed with asparagus, tomatoes and angel hair pasta.</p>
+                        <img class="altImg" src="img/rest1_special2.png" alt="Wednesday Special" />
+                    </div>
+                    <div>
+                        <h>SHRIMP SCAMPI $20</h>
+                        <ul>
+                            <li><p>Sauteed shrimp</p></li>
+                            <li><p>Asparagus tomatoes</p></li>
+                            <li><p>Angel hair pasta</p></li>
+                        </ul>                
                     </div>
                 </div>
                 <div class="nightContainer reveal">
-                    <img src="img/rest1_special3.png" alt="Thursday Special" />
                     <div>
-                        <h> GIARDINO</h>
-                        <p>Grilled chicken and a medley of fresh vegetables tossed with ruffled pappardelle pasta.</p>
+                        <img src="img/rest1_special3.png" alt="Thursday Special" />
+                    </div>
+                    <div>
+                        <h> GIARDINO $15</h>
+                        <ul>
+                            <li><p>Grilled chicken</p></li>
+                            <li><p>Fresh vegi</p></li>
+                            <li><p>Ruffled pappardelle pasta</p></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="nightContainer reveal">
-                    <img class="altImg" src="img/rest1_special4.png" alt="Friday Special" />
                     <div>
-                        <h>Bruschetta</h>
-                        <p>An antipasto dish, bruschetta has grilled bread topped with veggies.</p>
+                        <img class="altImg" src="img/rest1_special4.png" alt="Friday Special" />
+                    </div>
+                    <div>
+                        <h>Bruschetta $18</h>
+                        <ul>
+                            <li><p>Antipasto dish</p></li>
+                            <li><p>Grilled bread</p></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
         <!-- reservations -->
         <section class="reservations">
-            <div class="reservationSectionBanner reveal"></div>
+            <!-- <div class="reservationSectionBanner reveal"></div> -->
             <div class="sectionContainer">
                 <h2 class="reveal">Fill in the form below</h2>
                 <p class="reveal"><span>*</span> required</p>
@@ -246,70 +268,48 @@
                         <input type="text" name="name" placeholder="First and Last Name">
                     </div>
                     
-                    <div class="leftside">
-                         <div class="reveal date">
-                            <label for="date">Date<span>*</span></label>
-                            <input type="date" name="date" placeholder="yyyy-mm-dd" />
-                        </div>
-                        
-                        <div class="reveal phone">
-                            <label for="phone">Phone<span>*</span></label>
-                            <input type="text" name="phone" placeholder="ex: (123) 456-7890">
-                        </div>
-                        
-                        <div class="reveal guests">
-                            <label for="guests">Guests Numbers<span>*</span></label>
-                            <select name="guests">
-                                <option>Select the number of guests...</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10+">10+</option>
-                            </select>
-                        </div>
-                        
+                    <div class="reveal phone">
+                        <label for="phone">Phone<span>*</span></label>
+                        <input type="text" name="phone" placeholder="ex: (123) 456-7890">
                     </div>
-                   
-                    <div class="rightside">
-                        <div class="reveal time">
-                            <label for="time">Time<span>*</span></label>
-                            <select name="time">
-                                <option>Select a time...</option>
-                                <option value="6:00 pm">6:00 pm</option>
-                                <option value="6:30 pm">6:30 pm</option>
-                                <option value="7:00 pm">7:00 pm</option>
-                                <option value="7:30 pm">7:30 pm</option>
-                                <option value="8:00 pm">8:00 pm</option>
-                                <option value="8:30 pm">8:30 pm</option>
-                                <option value="9:00 pm">9:00 pm</option>
-                                <option value="9:30 pm">9:30 pm</option>
-                            </select>
-                        </div>
+                    
+
+                    <div class="reveal date">
+                        <label for="date">Date<span>*</span></label>
+                        <input type="date" name="date" placeholder="yyyy-mm-dd" />
+                    </div>
+                    
+                
+                    <div class="reveal time">
+                        <label for="time">Time<span>*</span></label>
+                        <select name="time">
+                            <option>Select a time...</option>
+                            <option value="6:00 pm">6:00 pm</option>
+                            <option value="6:30 pm">6:30 pm</option>
+                            <option value="7:00 pm">7:00 pm</option>
+                            <option value="7:30 pm">7:30 pm</option>
+                            <option value="8:00 pm">8:00 pm</option>
+                            <option value="8:30 pm">8:30 pm</option>
+                            <option value="9:00 pm">9:00 pm</option>
+                            <option value="9:30 pm">9:30 pm</option>
+                        </select>
+                    </div>
                         
-                        <div class="reveal email">
-                            <label for="email">Email</label>
-                            <input type="text" name="email" placeholder="ex: myname@example.com">
-                        </div>
-                        
-                        <div class="reveal type">
-                            <label for="types">Reservation Type<span>*</span></label>
-                            <select name="types">
-                                <option>Select reservation types...</option>
-                                <option value="Dinner">Dinner</option>
-                                <option value="Birthday/Anniversary">Birthday/Anniversary</option>
-                                <option value="Private">Private</option>
-                                <option value="Wedding">Wedding</option>
-                                <option value="Corporate">Corporate</option>
-                                <option value="Holiday">Holiday</option>
-                                <option value="Other">Other</option>
-                            </select>
-                         </div>
+                    <div class="reveal guests">
+                        <label for="guests">Guests Numbers<span>*</span></label>
+                        <select name="guests">
+                            <option>Select the number of guests...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10+">10+</option>
+                        </select>
                     </div>
         
                     <div class="reveal requests">
@@ -408,7 +408,7 @@
                     
                     <div class="chefmonica">
                         <p class="reveal"> 
-                            Chef Monica was born in Austria and started his formal cooking training in her early teen years. She received an apprenticeship at L'Oustau de Baumaniere in Provence and worked as a chef in many French restaurants and hotels in Paris. Monica Galler is a television chef and author of cookbooks such as Wolfgang Puck Adventures in the Kitchen, and The Wolfgang Puck Cookbook: Recipes from Spago.
+                            Chef Monica is a television chef and author of cookbooks such as Wolfgang Puck Adventures in the Kitchen.
                         </p>
                     </div>
                 </div>
@@ -452,7 +452,7 @@
         </section>
         <!-- reservations -->
         <section class="reservations">
-            <div class="reservationSectionBanner reveal"></div>
+            <!-- <div class="reservationSectionBanner reveal"></div> -->
             <div class="sectionContainer">
                 <h2 class="reveal">Fill in the form below</h2>
                 <p class="reveal"><span>*</span> required</p>
@@ -625,7 +625,7 @@
                     
                     <div class="chefmonica">
                         <p class="reveal"> 
-                            Born and raised in Los Angeles, Chef Stephen Gillanders began his culinary training at the age of 15 when his mother saw an article for a teen cooking class at a local culinary arts school. He never looked back. After graduating high school, Gillanders went on to Los Angeles Mission College before transferring to the University of Nevada, Las Vegas, acquiring an associates and bachelor degree in Culinary Arts Management at both, respectively.
+                            Chef Stephen is a television chef and author of cookbooks such as Wolfgang Puck Adventures in the Kitchen.
                         </p>
                     </div>
                 </div>
@@ -671,7 +671,7 @@
         </section>
         <!-- reservations -->
         <section class="reservations">
-            <div class="reservationSectionBanner reveal"></div>
+            <!-- <div class="reservationSectionBanner reveal"></div> -->
             <div class="sectionContainer">
                 <h2 class="reveal">Fill in the form below</h2>
                 <p class="reveal"><span>*</span> required</p>

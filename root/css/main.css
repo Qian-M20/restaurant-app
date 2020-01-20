@@ -169,13 +169,13 @@ footer {
 
 
 #landing header {
-    box-shadow: 1px 3px 10px 1px rgba(0,0,0,.8);
+    /* box-shadow: 1px 3px 30px 1px rgba(0,0,0,.8); */
     background:#f1862f;
     color: white;
-    height: 60px;
+    height: 80px;
     padding: 5px;
     font-size: 2em;
-    /* line-height: 60px; */
+    line-height: 70px;
     text-align: center;
     font-family: 'Alata', sans-serif;
 
@@ -197,10 +197,10 @@ footer {
     border-bottom: 2px dotted black;
 }
 
-.landingLogos:hover {
-    box-shadow: 1px 3px 10px 1px rgba(0,0,0,.8);
+.landingCards:hover {
     cursor: pointer;
 }
+
 
 
 
@@ -208,11 +208,12 @@ footer {
     width:60%;
     float:left;
     color:#990033;
+    font-size: 17px;
     padding:12px 0 12px 0;
 }
 
 .textintro h1 {
-    font-size:25px;
+    font-size:28px;
     
 }
 
@@ -224,17 +225,19 @@ footer {
 .rest1_landinglogs p {
     font-family: Rest1FontBody;
     color: #003366;
+
 }
 
 .rest2_landinglogos h1{
     font-family:Rest2FontTitle;
     color:#ec6941;
-    font-size:20.5px;  
+    font-size:28px;  
 }
 
 .rest2_landinglogos p {
     font-family: Rest2FontBody;
     color:#220c35;
+    font-size: 17px;
 }
 
 .rest2_landinglogos img {
@@ -244,11 +247,13 @@ footer {
 .rest3_landinglogos h1 {
     font-family: Rest3FontTitle;
     color:#75a128;
+    font-size: 28px;
 }
 
 .rest3_landinglogos p {
     font-family: Rest3FontBody;
     color:#002b4d;
+    font-size: 17px;
 }
 
 .rest3_landinglogos img {
@@ -267,18 +272,19 @@ footer {
 
 #menu {
     
-    background: #7dc6dc;
+    background: lightgray;
     padding-top: 80px;
 }
 
 #menu header {
-    font-family: "AppFont", sans-serif;
+    font-family: 'Alata', sans-serif;    
     padding: 15px;
     border-bottom: solid 5px #FFF;
-    background: #c97d2a;
+    background: #f1862f;
     color: #FFF;
     font-size: 25px;
     line-height: 100%;
+    text-align: center;
 }
 
 .menuBtn {
@@ -483,45 +489,30 @@ header img {
     overflow: auto;
 }
 
-.nightContainer:first-child {
-    margin-top: 0;
+.nightContainer {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 12px;
 }
 
-.nightContainer:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
+.menuPic{
+    grid-column: 1/2;
 }
 
 .nightContainer img {
-    width: 140px;
-    height: auto;
-    float: left;
-    margin-right: 10px;
-    margin-top:20px;
+    width:100%;
 }
 
-.nightContainer div {
-    float: left;
-    width: 130px;
-    margin:10px;
-    padding-left:10px;
+.menuDesc {
+    grid-column: 2/3;
 }
 
-.nightContainer h {
-    font-size: 15px;
+.nightContainer ul {
+    margin-left: 20px;
 }
 
-.nightContainer p {
-    margin-top: 10px;
-    margin: 0 !important;
-}
-
-
-.altImg {
-    float: right !important;
-    margin: 0 !important;
-    margin-left: 10px !important;
-
+.nightContainer ul li p{
+    margin-bottom: 2px;
 }
 
 
@@ -680,6 +671,8 @@ input, select, textarea {
     font-family: Rest1FontBody;
     color:gray;
 }
+
+
 
 /* reservations */
 
