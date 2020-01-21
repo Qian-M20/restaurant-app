@@ -26,7 +26,7 @@ section {
 /* restaurant 1 fonts */
 @font-face {
     font-family: "Rest1FontTitle";
-    src: url(fonts/AndikaNewBasic-BI.ttf);
+    src: url(fonts/AndikaNewBasic-I.ttf);
 }
 
 /* regular size */
@@ -214,12 +214,12 @@ footer {
 
 .textintro h1 {
     font-size:28px;
-    
+    font-style: italic;
+    font-weight: bolder;
 }
 
 .rest1_landinglogs h1 {
     font-family: Rest1FontTitle;
-    
 }
 
 .rest1_landinglogs p {
@@ -236,7 +236,7 @@ footer {
 
 .rest2_landinglogos p {
     font-family: Rest2FontBody;
-    color:#220c35;
+    color:#ec6941;
     font-size: 17px;
 }
 
@@ -252,7 +252,7 @@ footer {
 
 .rest3_landinglogos p {
     font-family: Rest3FontBody;
-    color:#002b4d;
+    color:#75a128;
     font-size: 17px;
 }
 
@@ -461,19 +461,6 @@ header img {
     margin-left: -12px;
 }
 
-.leftside {
-    width:40%;
-    margin-right:40px;
-    
-}
-
- .rightside {
-    width:40%;
-    position:relative;
-    margin-left:190px;
-    margin-top:-185px;
-
-}
 
 
 /* specials section */
@@ -551,6 +538,10 @@ input, select, textarea {
     font-size: 18px;
     margin-top: 15px;
 }
+
+select {
+    height:27px;
+}
 /* RESTAURANT 1 ////////////////////////////////////// */
 
 /* general */
@@ -624,6 +615,7 @@ input, select, textarea {
 
 #rest1 .profileBold {
     font-family: "Rest1FontTitle";
+    color:#990033 !important;
 }
 #rest1 .chefpic {
     width:150px;
@@ -661,6 +653,7 @@ input, select, textarea {
 
 #rest1 .sectionContainer p {
     font-family: Rest1FontBody;
+    color:#003366;
 }
 
 #rest1 .sectionContainer p.reveal, #rest1 .sectionContainer p.profileBold, #rest1 .sectionContainer p.chefnameitallic {
@@ -806,7 +799,7 @@ input, select, textarea {
 
 
 #rest2 .hours h2 {
-    color: #220c35;
+    /* color: #220c35; */
     border-bottom-color: #f8b62b;
     font-family: "Rest2FontBodyBold";
     font-size: 20px;
@@ -830,6 +823,7 @@ input, select, textarea {
 
 #rest2 .profileBold {
     font-family: "Rest2FontTitle";
+    color: #f8b62b !important;
 }
 #rest2 .chefpic {
     width:150px;
@@ -983,7 +977,7 @@ input, select, textarea {
 
 
 #rest3 .hours h2 {
-    color: #00274d;
+    /* color: #00274d; */
     border-bottom-color: #75a128;
     font-family: "Rest3FontBodyBold";
     font-size: 20px;
@@ -1007,6 +1001,7 @@ input, select, textarea {
 
 #rest3 .profileBold {
     font-family: "Rest3FontTitle";
+    color: #75a128 !important;
 }
 #rest3 .chefpic {
     width:150px;
