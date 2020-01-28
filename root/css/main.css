@@ -80,7 +80,7 @@ section {
 /* GENRAL APP STYLES /////////////////////////////////// */
 
 body {
-    font-size: 14px;
+    font-size: 17px;
 /*    overflow has to be auto, otherwise the chefintro would not show up*/
     overflow: auto;
     box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
@@ -107,17 +107,23 @@ section {
     position: absolute;
     top: 60px;
     width: 375px;
-    height: 547px;
-    background: #FFF;
+    height: 80vh;
+    /* background: #FFF; */
     overflow: auto;
     padding: 20px;
 }
 
+section.home {
+    padding:0;
+}
+
 footer {
     width: 375px;
-    height: 60px;
+    height: 10vh;
     position: absolute;
     bottom: 0;
+    display:flex;
+    justify-content: space-around;
 }
 /* SPLASH SCREEN ////////////////////////////////////////// */
 
@@ -160,18 +166,32 @@ footer {
 
 /* LANDING SCREEN ///////////////////////////////////////// */
 
+.landingBg {
+    width:100%;
+    height:100%;
+    position: absolute;
+    background-image: url(../img/landing_bg.jpg);
+    background-size: cover;
+    /* -webkit-filter: opacity(30%);
+    filter: opacity(30%); */
+}
+
+.landingBody {
+    margin-top:80px;
+}
+
 #landing {
     /* font-family: "AppFont", sans-serif; */
     /* background-image: url(../img/splash_bg.png); */
     background-size: cover;
-    padding-top: 80px;
+    /* padding-top: 80px; */
 }
 
 
 #landing header {
     /* box-shadow: 1px 3px 30px 1px rgba(0,0,0,.8); */
-    background:#f1862f;
-    color: white;
+    background:rgba(255,255,255,0.9);
+    color: #f1862f;
     height: 80px;
     padding: 5px;
     font-size: 2em;
@@ -183,92 +203,55 @@ footer {
 
 
 .landingLogos {
-    position: relative;
+    /* position: relative; */
     width:auto;
     height:190px;
-    margin: 5px;
-    background:#fff;
-    /* border-left:10px solid #362e2b; */
-    padding:20px;
+    background:rgba(211,211,211,0.2);
+}
 
+.rest3_landinglogos {
+    height:205px;
+    padding:40px;
+}
+
+.rest2_landinglogos {
+    padding:20px;
 }
 
 .rest1_landinglogos, .rest2_landinglogos {
     border-bottom: 2px dotted black;
 }
 
+.landingCards {
+    display:flex;
+    align-items: center;
+    
+}
+
+
 .landingCards:hover {
     cursor: pointer;
 }
 
 
-
-
-.textintro {
-    width:60%;
-    float:left;
-    color:#990033;
-    font-size: 17px;
-    padding:12px 0 12px 0;
-}
-
-.textintro h1 {
-    font-size:28px;
-    font-style: italic;
-    font-weight: bolder;
-}
-
-.rest1_landinglogs h1 {
-    font-family: Rest1FontTitle;
-}
-
-.rest1_landinglogs p {
-    font-family: Rest1FontBody;
-    color: #003366;
-
-}
-
-.rest2_landinglogos h1{
-    font-family:Rest2FontTitle;
-    color:#ec6941;
-    font-size:28px;  
-}
-
-.rest2_landinglogos p {
-    font-family: Rest2FontBody;
-    color:#ec6941;
-    font-size: 17px;
-}
-
-.rest2_landinglogos img {
-    height:95%;
-}
-
-.rest3_landinglogos h1 {
-    font-family: Rest3FontTitle;
-    color:#75a128;
-    font-size: 28px;
-}
-
-.rest3_landinglogos p {
-    font-family: Rest3FontBody;
-    color:#75a128;
-    font-size: 17px;
-}
-
-.rest3_landinglogos img {
-    height:90%;
-    
-}
-
-
 .landinglogos {
-    width:40%;
+    width:60%;
     padding:10px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 
 /* //////MENU ////////////////////////////////////////////// */
+
+.menuBody {
+    height:90vh;
+}
+
+.contactbox {
+    font-size:11px;
+}
 
 #menu {
     
@@ -310,8 +293,9 @@ footer {
 }
 
 .contactform {
-    font-family: AppFont;
+    /* font-family: AppFont; */
     text-align: center;
+    font-weight: bolder;
     
 }
 .contactbox {
@@ -360,16 +344,53 @@ footer {
 /* header/footer */
 
 header {
-    background: #ffffff;;
+    /* background: #ffffff;; */
     padding:10px;
-    height:60px;
-
+    height:10vh;
 }
+
+.logoTitle {
+    display:flex;
+    height:100%;
+    align-items: center;
+    /* justify-content: center; */
+    /* margin-left: -30%; */
+}
+
+#rest1 .logoTitle p.reveal {
+    margin-bottom: 0;
+    margin-top: -10px;
+    font-size:1.7em;
+    font-family: "Rest1FontTitle";
+    color: #990033;
+}
+
+#rest2 .logoTitle p.reveal {
+    margin-bottom: 0;
+    margin-top: -5px;
+    font-size:1.6em;
+    font-family: "Rest2FontTitle";
+    color: #f8b62b;
+}
+
+#rest3 .logoTitle p.reveal {
+    margin-bottom: 0;
+    margin-top: -5px;
+    margin-left:30px;
+    font-size:1.6em;
+    font-family: "Rest3FontTitle";
+    color: #75a128;
+}
+
 
 .logobox {
     width:25%;
     margin-left: 55px;
     
+}
+
+.textSec .logobox {
+    margin-left:0;
 }
 
 footer div {
@@ -379,7 +400,7 @@ footer div {
     font-size: 12px;
     padding: 10px;
     color: #FFF;
-    margin-left:40px;
+    /* margin-left:40px; */
 }
 
 footer img {
@@ -388,7 +409,7 @@ footer img {
 }
 .hamburgermenu {
     float:left;
-    width:50%;
+    width:30%;
     margin-top: -10px;
 }
 
@@ -414,8 +435,11 @@ header img {
 .sectionContainer {
 /*    when you need to create dotted border */
     text-align: center;
-    overflow: auto;
+    /* overflow: hidden; */
     color: #000;
+    height:80vh;
+    display:grid;
+    margin-top:5px;
 }
 
 /* home section */
@@ -473,7 +497,7 @@ header img {
     padding: 10px;
     padding-bottom: 20px;
     margin: 10px 0;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .nightContainer {
@@ -526,7 +550,7 @@ input, select, textarea {
     padding: 5px;
     border: solid 1px;
     width: 100%;
-    font-size: 10px;
+    /* font-size: 10px; */
     border-radius: 5px;
     color: #666;
     background: #FFF;
@@ -549,23 +573,10 @@ select {
     font-family: "Rest1FontBody", sans-serif;
 }
 
-/* general section */
-#rest1 .sectionContainer {
-    border-bottom-color: #990033;
-}
-
-
-/* header/footer */
-#rest1 header {
-    border-bottom: solid 5px #990033;
-
-}
-
 
 #rest1 footer {
     background: #990033;
 }
-
 
 
 #rest1 .hours p {
@@ -582,6 +593,10 @@ select {
 
 
 /* home */
+
+#rest1 {
+    background-color: #e7f2f6;
+}
 
 #rest1 h2 {
     font-family: "Rest1FontTitle";
@@ -700,7 +715,7 @@ select {
 #rest1 .reserve {
     border-color: #FFF !important;
     color: #FFF;
-    background: #990033;
+    background: #00274d;
 }
 
 #rest1 .reservations span {
@@ -708,8 +723,8 @@ select {
 }
 
 #rest1 .reserve:hover {
-    border-color: #990033 !important;
-    color: #990033;
+    border-color: #00274d !important;
+    color: #00274d;
     background: #FFF;
 }
 
@@ -726,8 +741,9 @@ select {
 
 /* header/footer */
 #rest1 header {
-    border-bottom: solid 5px #990033;
-
+    background-color:white;
+    border-bottom:1px solid #d3d3d3;
+    box-shadow: 0 10px 6px -6px #777;
 }
 
 
@@ -752,8 +768,9 @@ select {
 
 /* header/footer */
 #rest2 header {
-    border-bottom: solid 5px #f8b62b;
-
+    background-color:white;
+    border-bottom:1px solid #d3d3d3;
+    box-shadow: 0 10px 6px -6px #777;
 }
 
 
@@ -785,10 +802,14 @@ select {
     float:left;
 }
 /* home */
+
+#rest2 {
+    background-color: #e7f2f6;
+}
  
 #rest2 .logobox {
-    width:40px;
-    margin-left:100px;
+    width:100px;
+    /* margin-left:100px; */
 }
 
 #rest2 h2 {
@@ -842,6 +863,9 @@ select {
     padding-top: 50px;
     
 }
+
+
+
 
 /* general specials/reservations */
 
@@ -903,7 +927,7 @@ select {
 #rest2 .reserve {
     border-color: #FFF !important;
     color: #FFF;
-    background: #f8b62b;
+    background: #220c35;
 }
 
 #rest2 .reservations span {
@@ -911,15 +935,17 @@ select {
 }
 
 #rest2 .reserve:hover {
-    border-color: #f8b62b !important;
-    color: #f8b62b;
+    border-color: #220c35 !important;
+    color: #220c35;
     background: #FFF;
 }
 
 
 /* RESTAURANT 3 /////////////////////////////////////////// */
 /* general */
+
 #rest3 {
+    background-color: #e7f2f6;
     font-family: "Rest3FontBody", sans-serif;
 }
 
@@ -931,8 +957,9 @@ select {
 
 /* header/footer */
 #rest3 header {
-    border-bottom: solid 5px #75a128;
-
+    background-color:white;
+    border-bottom:1px solid #d3d3d3;
+    box-shadow: 0 10px 6px -6px #777;
 }
 
 
@@ -1075,7 +1102,7 @@ select {
 #rest3 .reserve {
     border-color: #FFF !important;
     color: #FFF;
-    background: #75a128;
+    background: #00274d;
 }
 
 #rest3 .reservations span {
@@ -1083,8 +1110,8 @@ select {
 }
 
 #rest3 .reserve:hover {
-    border-color: #75a128 !important;
-    color: #75a128;
+    border-color: #00274d !important;
+    color: #00274d;
     background: #FFF;
 }
 

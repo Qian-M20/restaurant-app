@@ -31,50 +31,48 @@
 <body>
     <main id="menu">
         <header>FAMILY OF EATERIES</header>
-        <div id="backToLanding" class="menuBtn">
-            <img src="img/new_icon.svg" alt="Home" />
-            <span>Select a New Restaurant</span>
-        </div>
-        
-        <div id="contact" class="menuBtn">
-            <img class="contactIcon" src="img/contact_icon.svg" alt="Contact" /><span>Contact Family of Eateries</span>
-        </div>
-        
-        <div id="about" class="menuBtn">
-            <img src="img/about_icon.svg" alt="About" />
-            <span>About Family of Eateries</span>
-        </div>
-        
-        <div class="contactbox">
-            <p class="contactform reveal"> CONTACT FORM </p>
-            <p class="reveal name">
-                <label for="name">Name<span>*</span></label>
-                <input type="text" name="name" placeholder="First and Last Name">
-            </p>
+        <div class="menuBody">
+            <div id="backToLanding" class="menuBtn">
+                <img src="img/new_icon.svg" alt="Home" />
+                <span>Select a New Restaurant</span>
+            </div>
             
-            <p class="reveal email">
-                <label for="email">Email</label>
-                <input type="text" name="email" placeholder="ex: myname@example.com">
-            </p>
+            <div id="contact" class="menuBtn">
+                <img class="contactIcon" src="img/contact_icon.svg" alt="Contact" /><span>Contact Family of Eateries</span>
+            </div>
             
-            <p class="reveal subject">
-                <label for="nasubjectme">Subject<span>*</span></label>
-                <input type="text" name="subject" placeholder="Email Subject">
-            </p>
+            <div id="about" class="menuBtn">
+                <img src="img/about_icon.svg" alt="About" />
+                <span>About Family of Eateries</span>
+            </div>
             
-            <p class="reveal message">
-                <label for="message">Message<span>*</span></label>
-                <textarea name="message" rows="4"></textarea>
-            </p>
+            <div class="contactbox">
+                <p class="contactform reveal"> CONTACT FORM </p>
+                <p class="reveal name">
+                    <label for="name">Name<span>*</span></label>
+                    <input type="text" name="name" placeholder="First and Last Name">
+                </p>
+                
+                <p class="reveal email">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" placeholder="ex: myname@example.com">
+                </p>
+                
+                <p class="reveal subject">
+                    <label for="nasubjectme">Subject<span>*</span></label>
+                    <input type="text" name="subject" placeholder="Email Subject">
+                </p>
+                
+                <p class="reveal message">
+                    <label for="message">Message<span>*</span></label>
+                    <textarea name="message" rows="4"></textarea>
+                </p>
+                
+                <p class="reveal">
+                    <input type="submit" class="submit" name="Submit" />
+                </p>
             
-            <p class="reveal">
-                <input type="submit" class="submit" name="Submit" />
-            </p>
-        
-        </div>
-        
-        <div>
-        
+            </div>
         </div>
      </main>   
     
@@ -87,41 +85,43 @@
  
     <!-- LANDING SCREEN -->
     <main id="landing">
+        <div class="backImg landingBg"></div>
         <header>
         
             <p>CHOOSE YOUR TASTE</p>
 
         </header>
         
-
-        <div id="logo1" class="landingCards landingLogos rest1_landinglogos">
-            <div class="textintro">
-                <h1>Tavola Cucina</h1>
-                <p>Best Italian restaurant with cultivated ambience</p>
+        <div class="landingBody">
+            <div id="logo1" class="landingCards landingLogos rest1_landinglogos">
+                <!-- <div class="textintro">
+                    <h1>Tavola Cucina</h1>
+                    <p>Best Italian restaurant with cultivated ambience</p>
+                </div> -->
+                
+                <img class="landinglogos langingLogo1" src="img/rest1Logo_revised.svg"/>
+            
             </div>
             
-            <img class="landinglogos" src="img/landing_rest1_logo.png"/>
-        
-        </div>
-        
-        <div id="logo2" class="landingCards landingLogos rest2_landinglogos">
-            <div class="textintro">
-                <h1>Hearth & Stone</h1>
-                <p>Best sandwiches with great quality meat.</p>
+            <div id="logo2" class="landingCards landingLogos rest2_landinglogos">
+                <!-- <div class="textintro">
+                    <h1>Hearth & Stone</h1>
+                    <p>Best sandwiches with great quality meat.</p>
+                </div> -->
+                
+                <img class="landinglogos langingLogo2" src="img/rest2_logo.svg"/>
+            
             </div>
             
-            <img class="landinglogos" src="img/rest2_logo.svg"/>
-        
-        </div>
-        
-        <div id="logo3" class="landingCards landingLogos rest3_landinglogos">
-            <div class="textintro">
-                <h1>Crispy's</h1>
-                <p>Great tasting burgers and traditional dinner fare.</p>
-            </div>
+            <div id="logo3" class="landingCards landingLogos rest3_landinglogos">
+                <!-- <div class="textintro">
+                    <h1>Crispy's</h1>
+                    <p>Great tasting burgers and traditional dinner fare.</p>
+                </div> -->
+                
+                <img class="landinglogos langingLogo3" src="img/rest3_logo.svg"/>
             
-            <img class="landinglogos" src="img/rest3_logo.svg"/>
-        
+            </div>
         </div>
 <!--    needs to insert vector icons later in the footer-->
     </main>
@@ -133,8 +133,12 @@
             <div class="hamburgermenu">
                 <img class="hamburger" data-click-state="1" src="img/hamburger.gif" alt="Menu" />
             </div>
+
+            <div class="logoTitle">
+                <p class="reveal">Tavola Cucina</p>
+            </div>
             
-            <img class="logobox" src="img/rest1_logo.svg"/>
+            <!-- <img class="logobox" src="img/rest1_logo.svg"/> -->
 
         </header>
         <!-- home -->
@@ -168,18 +172,20 @@
                   </a>
                 </div>
                 
-                <img class="rest1_banner reveal" src="img/rest1_feature_banner.png"/>
-              
-                    <h2 class="reveal">Tavola Cucina</h2>
-
-                <div class="hours reveal">
-                    <p> <span> Address: </span>640 College St, Toronto, ON M6G 1B4</p>
-                    <h2>OPENING HOURS</h2>
-                    <p>Tuesday - Saturday:  7am - 10:30pm</p>
-                    <p>Sunday & Monday:  closed</p>
-                </div>
+                <!-- <img class="rest1_banner reveal" src="img/rest1_feature_banner.png"/> -->
                 
-                <div class="chefintro ">
+                <div class="textSec">
+                    <!-- <h2 class="reveal">Tavola Cucina</h2> -->
+                    <!-- <img class="logobox reveal" src="img/rest1_logo.svg"/> -->
+
+                    <div class="hours reveal">
+                        <p> 640 College St, Toronto, ON M6G 1B4</p>
+                        <h2>OPENING HOURS</h2>
+                        <p>Tuesday - Saturday:  7am - 10:30pm</p>
+                        <p>Sunday & Monday:  closed</p>
+                    </div>
+                </div>
+                <!-- <div class="chefintro ">
                     <div class="chefprofile reveal">
                         <div class="chefpic"></div>
                         
@@ -194,7 +200,7 @@
                     <p class="reveal"> 
                         Frequent traveler to Italy and makes his way onto the innovative menus, bringing customers a truly authentic Italian dining experience.
                     </p>
-                </div>
+                </div> -->
             </div>
         </section>
             
@@ -206,12 +212,12 @@
                     <div class="menuPic">
                         <img src="img/rest1_special1.png" alt="Tuesday Special" />
                     </div>
-                    <div class="menuDesc">
+                    <div>
                         <h> PICCATA $10</h>
                         <ul>
                             <li><p>Grilled chicken</p></li>
                             <li><p>Lemon garlic butter sarce</p></li>
-                            <li><p>Sundried tomatoes</p></li>
+                            <!-- <li><p>Sundried tomatoes</p></li> -->
                         </ul>                    
                     </div>
                 </div>
@@ -224,7 +230,7 @@
                         <ul>
                             <li><p>Sauteed shrimp</p></li>
                             <li><p>Asparagus tomatoes</p></li>
-                            <li><p>Angel hair pasta</p></li>
+                            <!-- <li><p>Angel hair pasta</p></li> -->
                         </ul>                
                     </div>
                 </div>
@@ -237,7 +243,7 @@
                         <ul>
                             <li><p>Grilled chicken</p></li>
                             <li><p>Fresh vegi</p></li>
-                            <li><p>Ruffled pappardelle pasta</p></li>
+                            <!-- <li><p>Ruffled pappardelle pasta</p></li> -->
                         </ul>
                     </div>
                 </div>
@@ -335,7 +341,7 @@
             </div>
             <div class="reservationsIcon" data-section=".reservations">
                 <img src="img/rest_reservations_icon.svg" alt="Reservations" />
-                <p>Reservations</p>
+                <p>Booking</p>
             </div>
         
         </footer>
@@ -347,9 +353,12 @@
             
             <div class="hamburgermenu">
                 <img class="hamburger" data-click-state="1" src="img/hamburger.gif" alt="Menu"/>
-           </div>
+            </div>
             
-            <img class="logobox" src="img/rest2_logo.svg"/>
+            <div class="logoTitle">
+                <p class="reveal">Hearth & Stone</p>
+            </div>
+            <!-- <img class="logobox" src="img/rest2_logo.svg"/> -->
 
         </header>
         <!-- home -->
@@ -383,18 +392,22 @@
                   </a>
                 </div>
                 
-                <img class="rest2_banner reveal" src="img/rest2_feature_banner.png"/>
-              
-                    <h2 class="reveal">HEARTH & STONE</h2>
+                <!-- <img class="rest2_banner reveal" src="img/rest2_feature_banner.png"/> -->
+                <div class="textSec">
+            
+                    <!-- <img class="logobox reveal" src="img/rest2_logo_revised.svg"/> -->
+        
+                    <!-- <h2 class="reveal">HEARTH & STONE</h2> -->
 
-                <div class="hours reveal">
-                    <p> <span> Address: </span>237 College St, Toronto, ON M6G 1B4</p>
-                    <h2>OPENING HOURS</h2>
-                    <p>Monday - Saturday:  7am - 10:30pm</p>
-                    <p>Sunday:  closed</p>
+                    <div class="hours reveal">
+                        <p> 237 College St, Toronto, ON M6G 1B4</p>
+                        <h2>OPENING HOURS</h2>
+                        <p>Monday - Saturday:  7am - 10:30pm</p>
+                        <p>Sunday:  closed</p>
+                    </div>
                 </div>
                 
-                <div class="chefintro ">
+                <!-- <div class="chefintro ">
                     <div class="chefprofile reveal">
                         <div class="chefpic"></div>
                         
@@ -411,7 +424,7 @@
                             Chef Monica is a television chef and author of cookbooks such as Wolfgang Puck Adventures in the Kitchen.
                         </p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
             
@@ -530,7 +543,7 @@
             </div>
             <div class="reservationsIcon" data-section=".reservations">
                 <img src="img/rest_reservations_icon.svg" alt="Reservations" />
-                <p>Reservations</p>
+                <p>Booking</p>
             </div>
         
         </footer>
@@ -544,7 +557,11 @@
                 <img class="hamburger" data-click-state="1" src="img/hamburger.gif" alt="Menu"/>
            </div>
             
-            <img class="logobox" src="img/rest3_logo.svg"/>
+           <div class="logoTitle">
+                <p class="reveal">CRISPY'S</p>
+            </div>
+
+            <!-- <img class="logobox" src="img/rest3_logo.svg"/> -->
 
         </header>
         <!-- home -->
@@ -578,18 +595,19 @@
                   </a>
                 </div>
                 
-                <img class="rest3_banner reveal" src="img/rest3_feature_banner.png"/>
-              
-                    <h2 class="reveal">CRISPY'S</h2>
-
-                <div class="hours reveal">
-                    <p> <span> Address: </span>301 College St, Toronto, ON T6D 2B4</p>
-                    <h2>OPENING HOURS</h2>
-                    <p>Monday - Saturday:  10am - 10:30pm</p>
-                    <p>Sunday:  closed</p>
-                </div>
+                <!-- <img class="rest3_banner reveal" src="img/rest3_feature_banner.png"/> -->
                 
-                <div class="chefintro ">
+                <div class="textSec">
+                    <!-- <h2 class="reveal">CRISPY'S</h2> -->
+
+                    <div class="hours reveal">
+                        <p>301 College St, Toronto, ON T6D 2B4</p>
+                        <h2>OPENING HOURS</h2>
+                        <p>Monday - Saturday:  10am - 10:30pm</p>
+                        <p>Sunday:  closed</p>
+                    </div>
+                </div>
+                <!-- <div class="chefintro ">
                     <div class="chefprofile reveal">
                         <div class="chefpic"></div>
                         
@@ -606,7 +624,7 @@
                             Chef Stephen is a television chef and author of cookbooks such as Wolfgang Puck Adventures in the Kitchen.
                         </p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
             
@@ -727,7 +745,7 @@
             </div>
             <div class="reservationsIcon" data-section=".reservations">
                 <img src="img/rest_reservations_icon.svg" alt="Reservations" />
-                <p>Reservations</p>
+                <p>Booking</p>
             </div>
         
         </footer>

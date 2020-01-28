@@ -104,7 +104,7 @@ function loadlanding()
             opacity:0,
             onComplete: loadRest,
     //add parameters so that you know which restaurant you go to
-            onCompleteParams:["#rest1", "#ec6f99"]
+            onCompleteParams:["#rest1", "rgba(255,255,255,0.3)"]
         });
     });
     
